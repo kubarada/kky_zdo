@@ -10,18 +10,22 @@ image = cv2.imread(PATH_TO_IMG)
 # Convert image to grayscale
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 print(gray)
+
+
 # Use canny edge detection
-edges = cv2.Canny(gray,50,100,apertureSize=3)
-print(edges)
+edges = cv2.Canny(gray,80,100,apertureSize=3)
+cv2.imshow(IMG_TITLE,edges)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 # Apply HoughLinesP method to
 # to directly obtain line end points
 lines_list = []
 lines = cv2.HoughLinesP(
     edges,  # Input edge image
-    5,  # Distance resolution in pixels
+    20,  # Distance resolution in pixels
     np.pi / 180,  # Angle resolution in radians
-    threshold=50,  # Min number of votes for valid line
-    minLineLength=10,  # Min allowed length of line
+    threshold=40,  # Min number of votes for valid line
+    minLineLength=18,  # Min allowed length of line
     maxLineGap=4  # Max allowed gap between line for joining them
 )
 print(lines)
