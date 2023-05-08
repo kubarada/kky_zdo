@@ -1,5 +1,7 @@
 import cv2
 import numpy as np
+import os
+
 
 # Read image
 PATH_TO_IMG = 'cvat_dataset/images/default/SA_20211012-164802_incision_crop_0.jpg'
@@ -9,24 +11,36 @@ image = cv2.imread(PATH_TO_IMG)
 
 # Convert image to grayscale
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-print(gray)
+
+cv2.imwrite('rgb2gray.png', gray)
+
 
 
 # Use canny edge detection
-edges = cv2.Canny(gray,80,100,apertureSize=3)
-cv2.imshow(IMG_TITLE,edges)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+edges = cv2.Canny(gray,60,120,apertureSize=3)
+kernel = np.ones((1,2),np.uint8)
+edges_morph = cv2.morphologyEx(edges, cv2.MORPH_OPEN, kernel)
+kernel = np.ones((1,5),np.uint8)
+edges_morph = cv2.morphologyEx(edges_morph, cv2.MORPH_OPEN, kernel)
+
+edges_morph = cv2.dilate(edges_morph,kernel,iterations = 6)
+
+kernel = np.ones((2,1),np.uint8)
+edges_morph = cv2.erode(edges_morph,kernel,iterations = 1)
+
+cv2.imwrite('cannyFilter.png', edges_morph)
+
+
 # Apply HoughLinesP method to
 # to directly obtain line end points
 lines_list = []
 lines = cv2.HoughLinesP(
     edges,  # Input edge image
     20,  # Distance resolution in pixels
-    np.pi / 180,  # Angle resolution in radians
-    threshold=40,  # Min number of votes for valid line
-    minLineLength=18,  # Min allowed length of line
-    maxLineGap=4  # Max allowed gap between line for joining them
+    np.pi / 170,  # Angle resolution in radians
+    threshold=80,  # Min number of votes for valid line
+    minLineLength=90,  # Min allowed length of line
+    maxLineGap=18 # Max allowed gap between line for joining them
 )
 print(lines)
 # Iterate over points
