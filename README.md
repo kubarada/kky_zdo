@@ -1,2 +1,4 @@
-# kky_zdo
-Semestrální práce z předmětu KKY/ZDO.
+# Semestrální práce ZDO
+## Detekce jizev a stehů
+
+V souborech 
