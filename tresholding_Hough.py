@@ -2,7 +2,7 @@ import numpy as np
 import cv2 as cv
 from matplotlib import pyplot as plt
 
-PATH_TO_IMG = 'cvat_dataset/images/default/SA_20211104-131923_incision_crop_0.jpg'
+PATH_TO_IMG = 'cvat_dataset/images/default/SA_20211012-164802_incision_crop_0.jpg'
 
 img = cv.imread(PATH_TO_IMG, cv.IMREAD_GRAYSCALE)
 h,w = img.shape
@@ -19,6 +19,8 @@ th3 = cv.adaptiveThreshold(img,255,cv.ADAPTIVE_THRESH_GAUSSIAN_C,\
 # th3 = cv.morphologyEx(th3, cv.MORPH_OPEN, kernel)
 kernel = np.ones((1,3),np.uint8)
 th3 = cv.erode(th3,kernel,iterations = 3)
+kernel = np.ones((1,5),np.uint8)
+th3 = cv.dilate(th3,kernel,iterations = 1)
 
 
 cv.imwrite('tresholded.png', th3)
