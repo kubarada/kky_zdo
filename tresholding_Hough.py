@@ -9,14 +9,16 @@ h,w = img.shape
 assert img is not None, "file could not be read, check with os.path.exists()"
 img = cv.medianBlur(img,5)
 ret,th1 = cv.threshold(img,110,255,cv.THRESH_BINARY)
+cv.imwrite('tresholded1.png', th1)
 th2 = cv.adaptiveThreshold(img,255,cv.ADAPTIVE_THRESH_MEAN_C,\
             cv.THRESH_BINARY,11,2)
+cv.imwrite('tresholded2.png', th2)
 th3 = cv.adaptiveThreshold(img,255,cv.ADAPTIVE_THRESH_GAUSSIAN_C,\
             cv.THRESH_BINARY_INV,11,2)
+cv.imwrite('tresholded3.png', th3)
 
-# kernel = np.ones((4,4),np.uint8)
-# kernel = np.ones((1,3),np.uint8)
-# th3 = cv.morphologyEx(th3, cv.MORPH_OPEN, kernel)
+kernel = np.ones((1,3),np.uint8)
+th3 = cv.morphologyEx(th3, cv.MORPH_OPEN, kernel)
 kernel = np.ones((1,3),np.uint8)
 th3 = cv.erode(th3,kernel,iterations = 3)
 kernel = np.ones((1,5),np.uint8)
@@ -46,4 +48,4 @@ for points in lines:
     # Maintain a simples lookup list for points
     lines_list.append([(x1, y1), (x2, y2)])
 
-cv.imwrite('detectedLines.png', img)
+cv.imwrite('detectedLinesTresh.png', img)
