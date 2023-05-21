@@ -58,6 +58,12 @@ vertical_lines = cv.erode(th3, vertical_kernel, iterations=1)
 vertical_lines = cv.dilate(vertical_lines, vertical_kernel, iterations=2)
 
 
+sobel_y = cv.Sobel(img, cv.CV_64F, 2, 0, ksize=3)
+
+# Normalizace výsledku na rozsah 0-255
+sobel_y = cv.normalize(sobel_y, None, 0, 255, cv.NORM_MINMAX, cv.CV_8U)
+cv.imwrite('sobelLines.png', sobel_y)
+
 
 # horizontal_lines = cv.erode(th3, horizontal_kernel, iterations=1)
 # horizontal_lines = cv.dilate(horizontal_lines, horizontal_kernel, iterations=2)
@@ -91,4 +97,4 @@ if lines1 is not None:
             cv.line(img, (x1, y1), (x2, y2), (0, 0, 255), 2)
 
 
-cv.imwrite('detectedLinesVertical.png.png', img)
+cv.imwrite('detectedLinesVertical.png', img)
