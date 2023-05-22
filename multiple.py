@@ -1,4 +1,4 @@
-import cv2
+import cv2 as cv
 import numpy as np
 import os
 
@@ -8,48 +8,50 @@ directory = 'cvat_dataset/images/default/'
 # iterate over files in
 # that directory
 i = 0
+z = 0
+
+files = []
 for filename in os.listdir(directory):
     f = os.path.join(directory, filename)
-    image = cv2.imread(f)
+    files.append(f)
 
-    # Convert image to grayscale
-    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+for filename in files:
+    img = cv.imread(filename,cv.IMREAD_GRAYSCALE)
+    h, w = img.shape
+    img = cv.medianBlur(img, 5)
+    th3 = cv.adaptiveThreshold(img, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, \
+                               cv.THRESH_BINARY_INV, 11, 2)
 
-    # Use canny edge detection
-    edges = cv2.Canny(gray, 10, 150, apertureSize=3)
+    cols = th3.shape[1]
+    horizontal_size = cols // 30
+    horizontalStructure = cv.getStructuringElement(cv.MORPH_RECT, (horizontal_size, 1))
+    horizontal = cv.erode(th3, horizontalStructure)
+    horizontal = cv.dilate(horizontal, horizontalStructure)
+    cv.imwrite('cvat_dataset/images/output_th/' + str(z) + '.png', horizontal)
+    z = z + 1
 
-    kernel = np.ones((1, 3), np.uint8)
-    edges_morph = cv2.morphologyEx(edges, cv2.MORPH_OPEN, kernel)
-    kernel = np.ones((1, 3), np.uint8)
-    edges_morph = cv2.morphologyEx(edges_morph, cv2.MORPH_OPEN, kernel)
-
-    kernel = np.ones((1, 2), np.uint8)
-    edges_morph = cv2.erode(edges_morph, kernel, iterations=1)
-    edges_morph = cv2.dilate(edges_morph, kernel, iterations=5)
-    # Apply HoughLinesP method to
-    # to directly obtain line end points
     lines_list = []
-    lines = cv2.HoughLinesP(
-        edges_morph,  # Input edge image
-        1,  # Distance resolution in pixels
+    lines = cv.HoughLinesP(
+        horizontal,  # Input edge image
+        10,  # Distance resolution in pixels
         np.pi / 180,  # Angle resolution in radians
-        threshold=20,  # Min number of votes for valid line
-        minLineLength=50,  # Min allowed length of line
-        maxLineGap=250  # Max allowed gap between line for joining them
+        threshold=150,  # Min number of votes for valid line
+        minLineLength=w / 1.8,  # Min allowed length of line
+        maxLineGap=w/15  # Max allowed gap between line for joining them
     )
-    print(lines)
+
+    if lines is None:
+        print('No lines to detect in file ' +str(filename))
+        #del img, h, w, th3, kernel, morph, lines_list, lines
+        continue
+
 
     # Iterate over points
     for points in lines:
-        # Extracted points nested in the list
         x1, y1, x2, y2 = points[0]
-        # Draw the lines joing the points
-        # On the original image
-        cv2.line(image, (x1, y1), (x2, y2), (0, 255, 0), 2)
-        # Maintain a simples lookup list for points
+        cv.line(img, (x1, y1), (x2, y2), (0, 255, 0), 2)
         lines_list.append([(x1, y1), (x2, y2)])
 
-
-        # Save the result image
-        cv2.imwrite('cvat_dataset/images/output/' + str(i) + '.png', image)
-        i =+1
+    cv.imwrite('cvat_dataset/images/output/' + str(i) + '.png',img)
+    i = i +1
+    #del  h, w, th3, kernel, morph, lines_list, lines
