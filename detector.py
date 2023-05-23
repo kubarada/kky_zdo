@@ -83,23 +83,29 @@ def detect_stitches(image, false_detected_stitches):
     # Apply Canny edge detection
     #edges = cv.Canny(thresh, low_threshold, high_threshold)
     dims = thresh.shape
-    kernel_vertical = cv.getStructuringElement(cv.MORPH_RECT, (1, 5))
-    edges = cv.morphologyEx(thresh, cv.MORPH_OPEN, kernel_vertical)
-    edges = cv.dilate(edges, kernel_vertical, iterations=8)
+    kernel_vertical = cv.getStructuringElement(cv.MORPH_RECT, (1,8))
+    eroded = cv.erode(thresh, kernel_vertical, iterations=1)
+    thinner_line = cv.dilate(eroded, kernel_vertical, iterations=1)
+    kernel_vertical = cv.getStructuringElement(cv.MORPH_RECT, (1, 9))
+    thinner_line = cv.dilate(thinner_line, kernel_vertical, iterations=3)
     kernel_vertical = cv.getStructuringElement(cv.MORPH_RECT, (3, 1))
-    edges = cv.erode(edges, kernel_vertical, iterations=3)
-    cv.imwrite('canny.png', edges)
+    thinner_line = cv.erode(thinner_line, kernel_vertical, iterations=1)
+    # edges = cv.morphologyEx(thresh, cv.MORPH_OPEN, kernel_vertical)
+    # edges = cv.dilate(edges, kernel_vertical, iterations=3)
+    #kernel_vertical = cv.getStructuringElement(cv.MORPH_RECT, (3, 1))
+    #edges = cv.erode(edges, kernel_vertical, iterations=3)
+    cv.imwrite('canny.png', thinner_line)
 
     # Perform Hough Transform to detect lines
-    lines = cv.HoughLinesP(edges, rho=1, theta=np.pi / 180, threshold=None, minLineLength=dims[0]*0.3, maxLineGap=dims[0]*0.2)
-
+    lines = cv.HoughLinesP(thinner_line, rho=1, theta=np.pi / 180, threshold=10, minLineLength=dims[0]*0.2, maxLineGap=dims[0]*0.2)
+    print(lines)
     # Identify stitches based on their angle
     stitches = []
     if lines is not None:
         for line in lines:
             x1, y1, x2, y2 = line[0]
             angle = np.arctan2(y2 - y1, x2 - x1) * 180 / np.pi
-            if np.abs(angle) > 20:
+            if np.abs(angle) > 70:
                 stitches.append(line)
     else:
         false_detected_stitches += 1
