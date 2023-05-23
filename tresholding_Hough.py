@@ -2,7 +2,7 @@ import numpy as np
 import cv2 as cv
 from matplotlib import pyplot as plt
 
-PATH_TO_IMG = 'cvat_dataset/images/default/SA_20211012-181437_incision_crop_0.jpg'
+PATH_TO_IMG = 'cvat_dataset/images/default/SA_20211012-164802_incision_crop_0.jpg'
 
 img = cv.imread(PATH_TO_IMG, cv.IMREAD_GRAYSCALE)
 h,w = img.shape
@@ -83,6 +83,7 @@ print(lines1)
 from detector import keypoints_postprocessing, coordinates_control, detect_stitches
 false1= 0
 fin = detect_stitches(PATH_TO_IMG, false1)
+print(fin)
 fin = keypoints_postprocessing(lines1, img, 'stitch', PATH_TO_IMG)
 print(fin)
 fin = coordinates_control(fin, img, PATH_TO_IMG)

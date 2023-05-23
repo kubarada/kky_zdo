@@ -71,7 +71,7 @@ def detect_stitches(image, false_detected_stitches):
     out = cv.resize(img, dim, interpolation=cv.INTER_CUBIC)
 
     # Apply adaptive thresholding
-    thresh = cv.adaptiveThreshold(gray, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY, 17, 2)
+    thresh = cv.adaptiveThreshold(gray, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY_INV, 17, 2)
 
     # Determine the mean value of the binary image
     mean_value = np.mean(thresh)
@@ -81,12 +81,17 @@ def detect_stitches(image, false_detected_stitches):
     high_threshold = int(mean_value * 1)
 
     # Apply Canny edge detection
-    edges = cv.Canny(thresh, low_threshold, high_threshold)
+    #edges = cv.Canny(thresh, low_threshold, high_threshold)
+    dims = thresh.shape
+    kernel_vertical = cv.getStructuringElement(cv.MORPH_RECT, (1, 5))
+    edges = cv.morphologyEx(thresh, cv.MORPH_OPEN, kernel_vertical)
+    edges = cv.dilate(edges, kernel_vertical, iterations=8)
+    kernel_vertical = cv.getStructuringElement(cv.MORPH_RECT, (3, 1))
+    edges = cv.erode(edges, kernel_vertical, iterations=3)
     cv.imwrite('canny.png', edges)
-    dims = edges.shape
 
     # Perform Hough Transform to detect lines
-    lines = cv.HoughLinesP(edges, rho=1, theta=np.pi / 180, threshold=10, minLineLength=dims[0]*0.3, maxLineGap=dims[0]*0.2)
+    lines = cv.HoughLinesP(edges, rho=1, theta=np.pi / 180, threshold=None, minLineLength=dims[0]*0.3, maxLineGap=dims[0]*0.2)
 
     # Identify stitches based on their angle
     stitches = []
@@ -94,7 +99,7 @@ def detect_stitches(image, false_detected_stitches):
         for line in lines:
             x1, y1, x2, y2 = line[0]
             angle = np.arctan2(y2 - y1, x2 - x1) * 180 / np.pi
-            if np.abs(angle) > 60:
+            if np.abs(angle) > 20:
                 stitches.append(line)
     else:
         false_detected_stitches += 1
@@ -163,7 +168,6 @@ def keypoints_postprocessing(keypoints, img, keypoints_type, image):
             x_end = keypoints_out[0][0][2]
             y_end = keypoints_out[0][0][3]
 
-            #draw_detections(keypoints, [], img)
 
             for line_part in [0, 2]:  # starts then ends
                 for i in range(0, len(keypoints)):  # getting start/end points (x,y)
