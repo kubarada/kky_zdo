@@ -1,8 +1,8 @@
+import os
+from detector import horizontal_line_detection
 import cv2 as cv
 import numpy as np
-import os
-
-
+from sklearn.linear_model import LinearRegression
 directory = 'cvat_dataset/images/default/'
 
 # iterate over files in
@@ -16,42 +16,34 @@ for filename in os.listdir(directory):
     files.append(f)
 
 for filename in files:
-    img = cv.imread(filename,cv.IMREAD_GRAYSCALE)
-    h, w = img.shape
-    img = cv.medianBlur(img, 5)
-    th3 = cv.adaptiveThreshold(img, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, \
-                               cv.THRESH_BINARY_INV, 11, 2)
+    img = cv.imread(filename)
+    horizontal_lines = horizontal_line_detection(filename)
+    horizontal_lines_list = []
+    for line in horizontal_lines:
+        x1, y1, x2, y2 = line[0]
+        horizontal_lines_list.append((x1, y1))
+        horizontal_lines_list.append((x2, y2))
 
-    cols = th3.shape[1]
-    horizontal_size = cols // 30
-    horizontalStructure = cv.getStructuringElement(cv.MORPH_RECT, (horizontal_size, 1))
-    horizontal = cv.erode(th3, horizontalStructure)
-    horizontal = cv.dilate(horizontal, horizontalStructure)
-    cv.imwrite('cvat_dataset/images/output_th/' + str(z) + '.png', horizontal)
-    z = z + 1
+    x = [point[0] for point in horizontal_lines_list]
+    y = [point[1] for point in horizontal_lines_list]
 
-    lines_list = []
-    lines = cv.HoughLinesP(
-        horizontal,  # Input edge image
-        10,  # Distance resolution in pixels
-        np.pi / 180,  # Angle resolution in radians
-        threshold=150,  # Min number of votes for valid line
-        minLineLength=w / 1.8,  # Min allowed length of line
-        maxLineGap=w/15  # Max allowed gap between line for joining them
-    )
+    regressor = LinearRegression()
+    X = np.array(x).reshape(-1, 1)
+    if x and y is not None:
+        regressor.fit(X, y)
 
-    if lines is None:
-        print('No lines to detect in file ' +str(filename))
-        #del img, h, w, th3, kernel, morph, lines_list, lines
+        slope = regressor.coef_[0]
+        intercept = regressor.intercept_
+
+        # Define the starting and ending x-coordinates for the line segment
+        start_x = min(x)
+        end_x = max(x)
+
+        start_y = int(slope * start_x + intercept)
+        end_y = int(slope * end_x + intercept)
+
+        cv.line(img, (start_x, start_y), (end_x, end_y), (0, 255, 0), thickness=2)
+        cv.imwrite('cvat_dataset/images/output/' + str(i) + '.png',img)
+        i = i +1
+    else:
         continue
-
-
-    # Iterate over points
-    for points in lines:
-        x1, y1, x2, y2 = points[0]
-        cv.line(img, (x1, y1), (x2, y2), (0, 255, 0), 2)
-        lines_list.append([(x1, y1), (x2, y2)])
-
-    cv.imwrite('cvat_dataset/images/output/' + str(i) + '.png',img)
-    i = i +1
-    #del  h, w, th3, kernel, morph, lines_list, lines
