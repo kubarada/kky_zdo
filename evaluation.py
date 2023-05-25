@@ -1,14 +1,9 @@
 import numpy as np
-import json
 import math
 
-def compute_crossings_and_angles(image, incision, stitches):
-    # image = name of the image
-    # incisions = coordinates of the detected incision
-    # stitches = coordinates of the detected stitches
+def create_content(image, incision, stitches):
 
-    # it is necessary to preprocess the stitches arrays and incisions array
-    stitches_in = list()  # as an input for the dedicated method
+    stitches_in = list()
     incisions_in = list()
 
     if len(incision) > 0:
@@ -29,60 +24,39 @@ def compute_crossings_and_angles(image, incision, stitches):
                 line.append(points)
             stitches_in.append(line)
 
-    # compute the crossings, angles
-    intersections, intersections_alphas = proces_data(incisions_in, stitches_in)
+    intersections, intersections_alphas = compute_intersections(incisions_in, stitches_in)
 
     # create the dictionary for json
     information_out = [
         {
                 "filename": image,
                 "incision_polyline": incision[0][0].tolist(),
-                "crossing_positions": str_to_int(intersections, "intersections"),
-                "crossing_angles": str_to_int(intersections_alphas, "alphas")
+                "crossing_positions": intersection_int(intersections),
+                "crossing_angles": alphas_int(intersections_alphas)
             },
         ]
 
-    intersections_num = str_to_int(intersections, "intersections")
-    intersections_alphas_num = str_to_int(intersections_alphas, "alphas")
+    intersections_num = intersection_int(intersections)
+    intersections_alphas_num = alphas_int(intersections_alphas)
     return information_out, intersections_num, intersections_alphas_num
 
+def intersection_int(keypoints):
+    int_keypoints = list()
+    for points in keypoints:
+        one_line = list()
+        for point in points:
+            one_line.append(float(point))
+        int_keypoints.append(one_line)
+    return int_keypoints
 
-# method for writing the information about the input image
-def write_to_json(information, filename):
-    # information = dictionary type containing incisions, stitches and image filename
-    # file = the output json
-    with open(filename, "w", encoding='utf-8') as fw:
-        json.dump(information, fw, ensure_ascii=False, indent=4)
+def alphas_int(keypoints):
+    int_keypoints = list()
+    for point in keypoints:
+        int_keypoints.append(float(point))
+    return int_keypoints
 
+def compute_intersections(incisions, stitches):
 
-# method for clearing the json content before the main is called
-def clear_json_content(filename):
-    with open(filename, "w") as outfile:
-        outfile.truncate(0)
-
-
-# method for converting strings to numbers
-def str_to_int(keypoints, type):
-    number_keypoints = list()
-
-    if type == "intersections":
-        for points in keypoints:
-            one_line = list()
-            for point in points:
-                one_line.append(float(point))
-            number_keypoints.append(one_line)
-
-    elif type == "alphas":
-        for point in keypoints:
-            number_keypoints.append(float(point))
-    return number_keypoints
-
-
-def proces_data(incisions, stitches):
-    # incision = coordinates of the detected incision
-    # stitches = coordinates of the detected stitches
-
-    ############
     incision_alphas = []
     incision_lines = []
 
@@ -118,9 +92,6 @@ def proces_data(incisions, stitches):
                 alpha = 90 + 180. * np.arctan(dy / dx) / np.pi
             stitch_alphas.append(alpha)
             stitch_lines.append([p1, p2])
-
-    ###############
-    # analyze alpha for each pair of line segments
     intersections = []
     intersections_alphas = []
     for (incision_line, incision_alpha) in zip(incision_lines, incision_alphas):

@@ -1,17 +1,15 @@
 import os
 from detector import horizontal_line_detection, postprocessing_stitch, vertical_line_detection
-from evaluation import compute_crossings_and_angles, write_to_json
+from evaluation import create_content
 import numpy as np
 import cv2 as cv
 from sklearn.linear_model import LinearRegression
+import json
 
 directory = 'cvat_dataset/images/default/'
 
-# iterate over files in
-# that directory
 i = 0
-z = 0
-final_dict = list()
+json_content = list()
 
 files = []
 for filename in os.listdir(directory):
@@ -69,13 +67,15 @@ for filename in files:
                     # Draw the lines joing the points
                     # On the original image
                     cv.line(img, (x1, y1), (x2, y2), (0, 255, 0), 1)
-        information, intersections, intersection_alphas = compute_crossings_and_angles(filename, output, fin)
-        final_dict.append(information[0])
+        image_name = filename.replace('cvat_dataset/images/default/', '')
+        information, intersections, intersection_alphas = create_content(image_name, output, fin)
+        json_content.append(information[0])
         cv.imwrite('cvat_dataset/images/output/' + str(i) + '.png', img)
 
         i = i + 1
     else:
         continue
-print(final_dict)
-write_to_json(final_dict, 'cvat_dataset/output.json')
+print(json_content)
+with open('cvat_dataset/output.json', "w", encoding='utf-8') as fw:
+    json.dump(json_content, fw, ensure_ascii=False, indent=4)
 

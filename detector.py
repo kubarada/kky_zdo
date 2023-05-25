@@ -6,7 +6,7 @@ from sklearn.metrics import silhouette_score
 
 
 def horizontal_line_detection(PATH_TO_FILE):
-    img = cv.imread(PATH_TO_FILE)  # TODO zkombinovat do jednoho radku
+    img = cv.imread(PATH_TO_FILE)
     gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
     h, w = gray.shape
     # resizing, bcs works better on bigger pictures
