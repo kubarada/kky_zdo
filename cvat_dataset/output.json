@@ -1,0 +1,3617 @@
+[
+    {
+        "filename": "cvat_dataset/images/default/SA_20211012-164802_incision_crop_0.jpg",
+        "incision_polyline": [
+            23,
+            40,
+            158,
+            26
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20211012-165505_incision_crop_0.jpg",
+        "incision_polyline": [
+            8,
+            39,
+            207,
+            34
+        ],
+        "crossing_positions": [
+            [
+                139.0,
+                35.71
+            ],
+            [
+                70.29,
+                37.43
+            ],
+            [
+                35.57,
+                38.31
+            ]
+        ],
+        "crossing_angles": [
+            88.56,
+            86.83,
+            86.24
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20211012-181437_incision_crop_0.jpg",
+        "incision_polyline": [
+            17,
+            63,
+            283,
+            66
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20211012-191450_incision_crop_0.jpg",
+        "incision_polyline": [
+            16,
+            50,
+            189,
+            24
+        ],
+        "crossing_positions": [
+            [
+                101.78,
+                37.11
+            ]
+        ],
+        "crossing_angles": [
+            88.03
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20211013-055124_incision_crop_0.jpg",
+        "incision_polyline": [
+            12,
+            33,
+            138,
+            24
+        ],
+        "crossing_positions": [
+            [
+                114.15,
+                25.7
+            ]
+        ],
+        "crossing_angles": [
+            88.2
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20211104-131923_incision_crop_0.jpg",
+        "incision_polyline": [
+            13,
+            55,
+            185,
+            40
+        ],
+        "crossing_positions": [
+            [
+                131.58,
+                44.66
+            ],
+            [
+                116.81,
+                45.95
+            ]
+        ],
+        "crossing_angles": [
+            87.86,
+            79.31
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20211107-191434_incision_crop_0.jpg",
+        "incision_polyline": [
+            91,
+            81,
+            343,
+            101
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20211108-093925_incision_crop_0.jpg",
+        "incision_polyline": [
+            33,
+            30,
+            180,
+            34
+        ],
+        "crossing_positions": [
+            [
+                83.0,
+                31.36
+            ],
+            [
+                176.63,
+                33.91
+            ]
+        ],
+        "crossing_angles": [
+            88.44,
+            85.84
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20211108-153557_incision_crop_0.jpg",
+        "incision_polyline": [
+            239,
+            51,
+            294,
+            51
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20211109-153515_incision_crop_0.jpg",
+        "incision_polyline": [
+            7,
+            43,
+            110,
+            28
+        ],
+        "crossing_positions": [
+            [
+                35.75,
+                38.81
+            ],
+            [
+                63.78,
+                34.73
+            ]
+        ],
+        "crossing_angles": [
+            79.59,
+            88.3
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20211109-201940_incision_crop_0.jpg",
+        "incision_polyline": [
+            117,
+            51,
+            138,
+            52
+        ],
+        "crossing_positions": [
+            [
+                119.6,
+                51.12
+            ]
+        ],
+        "crossing_angles": [
+            88.74
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20211116-083704_incision_crop_0.jpg",
+        "incision_polyline": [
+            15,
+            42,
+            224,
+            36
+        ],
+        "crossing_positions": [
+            [
+                160.0,
+                37.84
+            ]
+        ],
+        "crossing_angles": [
+            88.36
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220307-124557_incision_crop_0.jpg",
+        "incision_polyline": [
+            13,
+            45,
+            257,
+            58
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220315-231645_incision_crop_0.jpg",
+        "incision_polyline": [
+            438,
+            86,
+            631,
+            90
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220317-113139_incision_crop_0.jpg",
+        "incision_polyline": [
+            14,
+            27,
+            169,
+            26
+        ],
+        "crossing_positions": [
+            [
+                17.0,
+                26.98
+            ]
+        ],
+        "crossing_angles": [
+            89.63
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220317-115800_incision_crop_0.jpg",
+        "incision_polyline": [
+            6,
+            23,
+            128,
+            29
+        ],
+        "crossing_positions": [
+            [
+                40.67,
+                24.7
+            ]
+        ],
+        "crossing_angles": [
+            84.89
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220326-175505_incision_crop_0.jpg",
+        "incision_polyline": [
+            111,
+            25,
+            185,
+            25
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220327-102336_incision_crop_0.jpg",
+        "incision_polyline": [
+            14,
+            49,
+            269,
+            43
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220327-102745_incision_crop_0.jpg",
+        "incision_polyline": [
+            14,
+            39,
+            231,
+            39
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220327-102745_incision_crop_1.jpg",
+        "incision_polyline": [
+            23,
+            31,
+            262,
+            45
+        ],
+        "crossing_positions": [
+            [
+                235.09,
+                43.42
+            ]
+        ],
+        "crossing_angles": [
+            88.69
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220330-155755_incision_crop_0.jpg",
+        "incision_polyline": [
+            86,
+            28,
+            196,
+            32
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220503-113941_incision_crop_0.jpg",
+        "incision_polyline": [
+            51,
+            65,
+            240,
+            51
+        ],
+        "crossing_positions": [
+            [
+                139.59,
+                58.44
+            ],
+            [
+                94.0,
+                61.81
+            ]
+        ],
+        "crossing_angles": [
+            86.96,
+            85.76
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220620-102836_incision_crop_0.jpg",
+        "incision_polyline": [
+            36,
+            44,
+            280,
+            59
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220620-103036_incision_crop_0.jpg",
+        "incision_polyline": [
+            20,
+            51,
+            310,
+            46
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220620-103348_incision_crop_0.jpg",
+        "incision_polyline": [
+            18,
+            66,
+            315,
+            61
+        ],
+        "crossing_positions": [
+            [
+                169.0,
+                63.46
+            ],
+            [
+                110.78,
+                64.44
+            ],
+            [
+                110.0,
+                64.45
+            ],
+            [
+                225.0,
+                62.52
+            ],
+            [
+                280.0,
+                61.59
+            ]
+        ],
+        "crossing_angles": [
+            89.04,
+            89.28,
+            89.04,
+            89.04,
+            89.04
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220620-103827_incision_crop_0.jpg",
+        "incision_polyline": [
+            14,
+            45,
+            247,
+            39
+        ],
+        "crossing_positions": [
+            [
+                218.0,
+                39.75
+            ],
+            [
+                162.0,
+                41.19
+            ]
+        ],
+        "crossing_angles": [
+            88.52,
+            88.52
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220620-104018_incision_crop_0.jpg",
+        "incision_polyline": [
+            11,
+            23,
+            167,
+            27
+        ],
+        "crossing_positions": [
+            [
+                148.0,
+                26.51
+            ],
+            [
+                116.6,
+                25.71
+            ],
+            [
+                17.42,
+                23.16
+            ],
+            [
+                90.53,
+                25.04
+            ]
+        ],
+        "crossing_angles": [
+            88.53,
+            86.03,
+            64.9,
+            87.65
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220620-105330_incision_crop_0.jpg",
+        "incision_polyline": [
+            15,
+            45,
+            301,
+            68
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220620-105330_incision_crop_1.jpg",
+        "incision_polyline": [
+            52,
+            44,
+            249,
+            55
+        ],
+        "crossing_positions": [
+            [
+                75.13,
+                45.29
+            ]
+        ],
+        "crossing_angles": [
+            86.35
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220620-105545_incision_crop_0.jpg",
+        "incision_polyline": [
+            125,
+            31,
+            178,
+            28
+        ],
+        "crossing_positions": [
+            [
+                161.0,
+                28.96
+            ]
+        ],
+        "crossing_angles": [
+            86.76
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220620-110036_incision_crop_0.jpg",
+        "incision_polyline": [
+            87,
+            117,
+            691,
+            118
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220620-110712_incision_crop_0.jpg",
+        "incision_polyline": [
+            12,
+            48,
+            265,
+            35
+        ],
+        "crossing_positions": [
+            [
+                116.87,
+                42.61
+            ]
+        ],
+        "crossing_angles": [
+            21.02
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220707-185055_incision_crop_0.jpg",
+        "incision_polyline": [
+            22,
+            34,
+            237,
+            49
+        ],
+        "crossing_positions": [
+            [
+                92.78,
+                38.94
+            ]
+        ],
+        "crossing_angles": [
+            71.37
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220707-190833_incision_crop_0.jpg",
+        "incision_polyline": [
+            257,
+            62,
+            375,
+            63
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220707-191616_incision_crop_0.jpg",
+        "incision_polyline": [
+            22,
+            56,
+            275,
+            53
+        ],
+        "crossing_positions": [
+            [
+                272.57,
+                53.03
+            ],
+            [
+                162.18,
+                54.34
+            ]
+        ],
+        "crossing_angles": [
+            86.59,
+            82.98
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220707-193326_incision_crop_0.jpg",
+        "incision_polyline": [
+            88,
+            127,
+            581,
+            95
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220801-104759_incision_crop_0.jpg",
+        "incision_polyline": [
+            165,
+            151,
+            765,
+            146
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220801-104954_incision_crop_0.jpg",
+        "incision_polyline": [
+            22,
+            15,
+            81,
+            20
+        ],
+        "crossing_positions": [
+            [
+                64.67,
+                18.62
+            ],
+            [
+                62.57,
+                18.44
+            ],
+            [
+                46.64,
+                17.09
+            ],
+            [
+                47.0,
+                17.12
+            ],
+            [
+                80.0,
+                19.92
+            ],
+            [
+                30.0,
+                15.68
+            ],
+            [
+                46.5,
+                17.08
+            ]
+        ],
+        "crossing_angles": [
+            87.72,
+            82.32,
+            89.24,
+            85.16,
+            85.16,
+            85.16,
+            88.34
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220801-105816_incision_crop_0.jpg",
+        "incision_polyline": [
+            19,
+            71,
+            269,
+            36
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220801-111423_incision_crop_0.jpg",
+        "incision_polyline": [
+            117,
+            81,
+            422,
+            94
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20220801-111801_incision_crop_0.jpg",
+        "incision_polyline": [
+            9,
+            8,
+            267,
+            15
+        ],
+        "crossing_positions": [
+            [
+                235.19,
+                14.14
+            ],
+            [
+                93.94,
+                10.3
+            ],
+            [
+                187.36,
+                12.84
+            ]
+        ],
+        "crossing_angles": [
+            86.51,
+            83.25,
+            86.85
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221009-162416_incision_crop_0.jpg",
+        "incision_polyline": [
+            13,
+            25,
+            104,
+            25
+        ],
+        "crossing_positions": [
+            [
+                16.0,
+                25.0
+            ]
+        ],
+        "crossing_angles": [
+            90.0
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-133935_incision_crop_0.jpg",
+        "incision_polyline": [
+            41,
+            23,
+            153,
+            16
+        ],
+        "crossing_positions": [
+            [
+                81.0,
+                20.5
+            ],
+            [
+                104.0,
+                19.06
+            ]
+        ],
+        "crossing_angles": [
+            86.42,
+            86.42
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-134015_incision_crop_0.jpg",
+        "incision_polyline": [
+            18,
+            19,
+            111,
+            13
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-134015_incision_crop_1.jpg",
+        "incision_polyline": [
+            10,
+            18,
+            134,
+            17
+        ],
+        "crossing_positions": [
+            [
+                110.0,
+                17.19
+            ],
+            [
+                50.44,
+                17.67
+            ],
+            [
+                89.34,
+                17.36
+            ],
+            [
+                67.0,
+                17.54
+            ],
+            [
+                30.0,
+                17.84
+            ],
+            [
+                90.0,
+                17.35
+            ]
+        ],
+        "crossing_angles": [
+            89.54,
+            86.65,
+            86.06,
+            89.54,
+            89.54,
+            89.54
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-134015_incision_crop_2.jpg",
+        "incision_polyline": [
+            75,
+            14,
+            94,
+            14
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-134355_incision_crop_0.jpg",
+        "incision_polyline": [
+            21,
+            55,
+            266,
+            52
+        ],
+        "crossing_positions": [
+            [
+                245.06,
+                52.26
+            ]
+        ],
+        "crossing_angles": [
+            84.9
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-143210_incision_crop_0.jpg",
+        "incision_polyline": [
+            20,
+            51,
+            281,
+            47
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-144815_incision_crop_0.jpg",
+        "incision_polyline": [
+            0,
+            39,
+            210,
+            39
+        ],
+        "crossing_positions": [
+            [
+                62.0,
+                39.0
+            ]
+        ],
+        "crossing_angles": [
+            90.0
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-144815_incision_crop_1.jpg",
+        "incision_polyline": [
+            3,
+            38,
+            178,
+            39
+        ],
+        "crossing_positions": [
+            [
+                83.75,
+                38.46
+            ],
+            [
+                124.82,
+                38.7
+            ]
+        ],
+        "crossing_angles": [
+            88.17,
+            88.08
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-154505_incision_crop_0.jpg",
+        "incision_polyline": [
+            69,
+            123,
+            357,
+            43
+        ],
+        "crossing_positions": [
+            [
+                86.0,
+                118.28
+            ]
+        ],
+        "crossing_angles": [
+            74.48
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-161716_incision_crop_0.jpg",
+        "incision_polyline": [
+            7,
+            11,
+            22,
+            11
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-161716_incision_crop_1.jpg",
+        "incision_polyline": [
+            11,
+            9,
+            51,
+            10
+        ],
+        "crossing_positions": [
+            [
+                22.0,
+                9.28
+            ],
+            [
+                34.61,
+                9.59
+            ],
+            [
+                45.0,
+                9.85
+            ]
+        ],
+        "crossing_angles": [
+            88.57,
+            88.07,
+            88.57
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-161721_incision_crop_0.jpg",
+        "incision_polyline": [
+            32,
+            58,
+            140,
+            28
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-161935_incision_crop_0.jpg",
+        "incision_polyline": [
+            33,
+            14,
+            125,
+            26
+        ],
+        "crossing_positions": [
+            [
+                69.0,
+                18.7
+            ],
+            [
+                38.0,
+                14.65
+            ]
+        ],
+        "crossing_angles": [
+            82.57,
+            82.57
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-161935_incision_crop_1.jpg",
+        "incision_polyline": [
+            59,
+            18,
+            152,
+            30
+        ],
+        "crossing_positions": [
+            [
+                126.51,
+                26.71
+            ]
+        ],
+        "crossing_angles": [
+            85.51
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-162236_incision_crop_0.jpg",
+        "incision_polyline": [
+            38,
+            14,
+            53,
+            14
+        ],
+        "crossing_positions": [
+            [
+                39.0,
+                14.0
+            ]
+        ],
+        "crossing_angles": [
+            90.0
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-162236_incision_crop_1.jpg",
+        "incision_polyline": [
+            5,
+            9,
+            60,
+            9
+        ],
+        "crossing_positions": [
+            [
+                49.0,
+                9.0
+            ],
+            [
+                25.0,
+                9.0
+            ],
+            [
+                25.38,
+                9.0
+            ],
+            [
+                13.65,
+                9.0
+            ],
+            [
+                37.62,
+                9.0
+            ]
+        ],
+        "crossing_angles": [
+            90.0,
+            90.0,
+            86.42,
+            86.63,
+            82.87
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-162709_incision_crop_0.jpg",
+        "incision_polyline": [
+            21,
+            51,
+            280,
+            43
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-162729_incision_crop_0.jpg",
+        "incision_polyline": [
+            55,
+            32,
+            246,
+            46
+        ],
+        "crossing_positions": [
+            [
+                92.86,
+                34.77
+            ],
+            [
+                137.58,
+                38.05
+            ]
+        ],
+        "crossing_angles": [
+            86.34,
+            72.39
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-165457_incision_crop_0.jpg",
+        "incision_polyline": [
+            24,
+            86,
+            323,
+            49
+        ],
+        "crossing_positions": [
+            [
+                75.0,
+                79.69
+            ]
+        ],
+        "crossing_angles": [
+            82.95
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-170359_incision_crop_0.jpg",
+        "incision_polyline": [
+            19,
+            29,
+            162,
+            30
+        ],
+        "crossing_positions": [
+            [
+                88.0,
+                29.48
+            ],
+            [
+                130.0,
+                29.78
+            ]
+        ],
+        "crossing_angles": [
+            89.6,
+            89.6
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-170535_incision_crop_0.jpg",
+        "incision_polyline": [
+            21,
+            50,
+            291,
+            52
+        ],
+        "crossing_positions": [
+            [
+                264.29,
+                51.8
+            ],
+            [
+                52.0,
+                50.23
+            ],
+            [
+                211.0,
+                51.41
+            ]
+        ],
+        "crossing_angles": [
+            88.13,
+            89.58,
+            89.58
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-172306_incision_crop_0.jpg",
+        "incision_polyline": [
+            253,
+            52,
+            500,
+            22
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-172555_incision_crop_0.jpg",
+        "incision_polyline": [
+            13,
+            55,
+            256,
+            36
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-173537_incision_crop_0.jpg",
+        "incision_polyline": [
+            59,
+            69,
+            358,
+            74
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-174201_incision_crop_0.jpg",
+        "incision_polyline": [
+            14,
+            30,
+            202,
+            45
+        ],
+        "crossing_positions": [
+            [
+                171.71,
+                42.58
+            ]
+        ],
+        "crossing_angles": [
+            88.37
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-181452_incision_crop_0.jpg",
+        "incision_polyline": [
+            9,
+            34,
+            175,
+            32
+        ],
+        "crossing_positions": [
+            [
+                157.62,
+                32.21
+            ]
+        ],
+        "crossing_angles": [
+            84.98
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-190218_incision_crop_0.jpg",
+        "incision_polyline": [
+            16,
+            84,
+            206,
+            46
+        ],
+        "crossing_positions": [
+            [
+                129.1,
+                61.38
+            ],
+            [
+                36.0,
+                80.0
+            ]
+        ],
+        "crossing_angles": [
+            86.05,
+            78.69
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-190757_incision_crop_0.jpg",
+        "incision_polyline": [
+            14,
+            50,
+            208,
+            57
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-191237_incision_crop_0.jpg",
+        "incision_polyline": [
+            24,
+            89,
+            261,
+            47
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-204606_incision_crop_0.jpg",
+        "incision_polyline": [
+            4,
+            20,
+            129,
+            28
+        ],
+        "crossing_positions": [
+            [
+                118.79,
+                27.35
+            ],
+            [
+                38.03,
+                22.18
+            ]
+        ],
+        "crossing_angles": [
+            88.47,
+            88.09
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-222705_incision_crop_0.jpg",
+        "incision_polyline": [
+            27,
+            79,
+            310,
+            56
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-231544_incision_crop_0.jpg",
+        "incision_polyline": [
+            52,
+            60,
+            332,
+            55
+        ],
+        "crossing_positions": [
+            [
+                304.0,
+                55.5
+            ],
+            [
+                55.28,
+                59.94
+            ],
+            [
+                124.03,
+                58.71
+            ]
+        ],
+        "crossing_angles": [
+            88.98,
+            87.39,
+            83.78
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221011-234558_incision_crop_0.jpg",
+        "incision_polyline": [
+            52,
+            60,
+            332,
+            55
+        ],
+        "crossing_positions": [
+            [
+                304.0,
+                55.5
+            ],
+            [
+                55.28,
+                59.94
+            ],
+            [
+                124.03,
+                58.71
+            ]
+        ],
+        "crossing_angles": [
+            88.98,
+            87.39,
+            83.78
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-073827_incision_crop_0.jpg",
+        "incision_polyline": [
+            17,
+            38,
+            227,
+            47
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-080318_incision_crop_0.jpg",
+        "incision_polyline": [
+            36,
+            82,
+            439,
+            83
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-081403_incision_crop_0.jpg",
+        "incision_polyline": [
+            16,
+            47,
+            192,
+            37
+        ],
+        "crossing_positions": [
+            [
+                43.08,
+                45.46
+            ]
+        ],
+        "crossing_angles": [
+            23.31
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-122539_incision_crop_0.jpg",
+        "incision_polyline": [
+            14,
+            37,
+            241,
+            48
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-123103_incision_crop_0.jpg",
+        "incision_polyline": [
+            20,
+            37,
+            237,
+            39
+        ],
+        "crossing_positions": [
+            [
+                206.45,
+                38.72
+            ]
+        ],
+        "crossing_angles": [
+            47.48
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-123103_incision_crop_1.jpg",
+        "incision_polyline": [
+            7,
+            33,
+            154,
+            33
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-132725_incision_crop_0.jpg",
+        "incision_polyline": [
+            8,
+            25,
+            103,
+            17
+        ],
+        "crossing_positions": [
+            [
+                53.13,
+                21.2
+            ],
+            [
+                17.31,
+                24.22
+            ]
+        ],
+        "crossing_angles": [
+            75.72,
+            78.85
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-132848_incision_crop_0.jpg",
+        "incision_polyline": [
+            14,
+            10,
+            78,
+            19
+        ],
+        "crossing_positions": [
+            [
+                55.0,
+                15.77
+            ],
+            [
+                70.0,
+                17.88
+            ],
+            [
+                27.0,
+                11.83
+            ],
+            [
+                43.0,
+                14.08
+            ],
+            [
+                42.99,
+                14.08
+            ]
+        ],
+        "crossing_angles": [
+            82.0,
+            82.0,
+            82.0,
+            82.0,
+            87.71
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-133600_incision_crop_0.jpg",
+        "incision_polyline": [
+            0,
+            2,
+            76,
+            7
+        ],
+        "crossing_positions": [
+            [
+                28.0,
+                3.84
+            ],
+            [
+                28.78,
+                3.89
+            ],
+            [
+                29.0,
+                3.91
+            ],
+            [
+                29.0,
+                3.91
+            ],
+            [
+                28.79,
+                3.89
+            ]
+        ],
+        "crossing_angles": [
+            86.24,
+            79.73,
+            86.24,
+            86.24,
+            87.42
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-133600_incision_crop_1.jpg",
+        "incision_polyline": [
+            7,
+            21,
+            70,
+            13
+        ],
+        "crossing_positions": [
+            [
+                12.28,
+                20.33
+            ]
+        ],
+        "crossing_angles": [
+            73.3
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-140202_incision_crop_0.jpg",
+        "incision_polyline": [
+            30,
+            64,
+            370,
+            67
+        ],
+        "crossing_positions": [
+            [
+                44.92,
+                64.13
+            ],
+            [
+                216.42,
+                65.64
+            ]
+        ],
+        "crossing_angles": [
+            80.5,
+            85.92
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-140234_incision_crop_0.jpg",
+        "incision_polyline": [
+            29,
+            63,
+            409,
+            84
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-140234_incision_crop_1.jpg",
+        "incision_polyline": [
+            119,
+            38,
+            317,
+            19
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-145424_incision_crop_0.jpg",
+        "incision_polyline": [
+            51,
+            36,
+            240,
+            36
+        ],
+        "crossing_positions": [
+            [
+                213.89,
+                36.0
+            ]
+        ],
+        "crossing_angles": [
+            83.66
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-150203_incision_crop_0.jpg",
+        "incision_polyline": [
+            37,
+            30,
+            209,
+            34
+        ],
+        "crossing_positions": [
+            [
+                149.5,
+                32.62
+            ],
+            [
+                38.0,
+                30.02
+            ]
+        ],
+        "crossing_angles": [
+            89.94,
+            88.67
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-153055_incision_crop_0.jpg",
+        "incision_polyline": [
+            6,
+            23,
+            145,
+            23
+        ],
+        "crossing_positions": [
+            [
+                125.48,
+                23.0
+            ]
+        ],
+        "crossing_angles": [
+            88.26
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-153118_incision_crop_0.jpg",
+        "incision_polyline": [
+            35,
+            25,
+            138,
+            39
+        ],
+        "crossing_positions": [
+            [
+                42.77,
+                26.06
+            ],
+            [
+                97.09,
+                33.44
+            ],
+            [
+                123.58,
+                37.04
+            ],
+            [
+                72.37,
+                30.08
+            ]
+        ],
+        "crossing_angles": [
+            80.06,
+            85.63,
+            74.13,
+            84.38
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-153318_incision_crop_0.jpg",
+        "incision_polyline": [
+            8,
+            9,
+            156,
+            17
+        ],
+        "crossing_positions": [
+            [
+                38.87,
+                10.67
+            ]
+        ],
+        "crossing_angles": [
+            81.78
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-154152_incision_crop_0.jpg",
+        "incision_polyline": [
+            12,
+            27,
+            88,
+            37
+        ],
+        "crossing_positions": [
+            [
+                14.0,
+                27.26
+            ]
+        ],
+        "crossing_angles": [
+            82.5
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-155310_incision_crop_0.jpg",
+        "incision_polyline": [
+            9,
+            32,
+            176,
+            34
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-170214_incision_crop_0.jpg",
+        "incision_polyline": [
+            41,
+            31,
+            187,
+            32
+        ],
+        "crossing_positions": [
+            [
+                82.44,
+                31.28
+            ],
+            [
+                84.06,
+                31.29
+            ],
+            [
+                169.99,
+                31.88
+            ],
+            [
+                125.92,
+                31.58
+            ]
+        ],
+        "crossing_angles": [
+            88.62,
+            88.27,
+            87.01,
+            87.63
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-170436_incision_crop_0.jpg",
+        "incision_polyline": [
+            60,
+            44,
+            276,
+            51
+        ],
+        "crossing_positions": [
+            [
+                191.95,
+                48.28
+            ],
+            [
+                241.0,
+                49.87
+            ]
+        ],
+        "crossing_angles": [
+            84.2,
+            88.14
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-170905_incision_crop_0.jpg",
+        "incision_polyline": [
+            43,
+            26,
+            201,
+            31
+        ],
+        "crossing_positions": [
+            [
+                74.57,
+                27.0
+            ],
+            [
+                178.0,
+                30.27
+            ]
+        ],
+        "crossing_angles": [
+            68.61,
+            88.19
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-170926_incision_crop_0.jpg",
+        "incision_polyline": [
+            104,
+            39,
+            193,
+            50
+        ],
+        "crossing_positions": [
+            [
+                128.0,
+                41.97
+            ]
+        ],
+        "crossing_angles": [
+            82.95
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-170943_incision_crop_0.jpg",
+        "incision_polyline": [
+            16,
+            28,
+            207,
+            36
+        ],
+        "crossing_positions": [
+            [
+                148.38,
+                33.54
+            ]
+        ],
+        "crossing_angles": [
+            86.06
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-174428_incision_crop_0.jpg",
+        "incision_polyline": [
+            63,
+            41,
+            239,
+            36
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-175202_incision_crop_0.jpg",
+        "incision_polyline": [
+            22,
+            38,
+            51,
+            38
+        ],
+        "crossing_positions": [
+            [
+                33.0,
+                38.0
+            ]
+        ],
+        "crossing_angles": [
+            82.87
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-181440_incision_crop_0.jpg",
+        "incision_polyline": [
+            8,
+            25,
+            103,
+            17
+        ],
+        "crossing_positions": [
+            [
+                53.13,
+                21.2
+            ],
+            [
+                17.31,
+                24.22
+            ]
+        ],
+        "crossing_angles": [
+            75.72,
+            78.85
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-181534_incision_crop_0.jpg",
+        "incision_polyline": [
+            11,
+            19,
+            130,
+            29
+        ],
+        "crossing_positions": [
+            [
+                15.48,
+                19.38
+            ],
+            [
+                48.0,
+                22.11
+            ]
+        ],
+        "crossing_angles": [
+            88.77,
+            85.2
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-184706_incision_crop_0.jpg",
+        "incision_polyline": [
+            11,
+            47,
+            333,
+            58
+        ],
+        "crossing_positions": [
+            [
+                135.0,
+                51.24
+            ],
+            [
+                85.0,
+                49.53
+            ],
+            [
+                314.54,
+                57.37
+            ]
+        ],
+        "crossing_angles": [
+            88.04,
+            88.04,
+            88.38
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-195221_incision_crop_0.jpg",
+        "incision_polyline": [
+            19,
+            51,
+            188,
+            55
+        ],
+        "crossing_positions": [
+            [
+                149.0,
+                54.08
+            ]
+        ],
+        "crossing_angles": [
+            88.64
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-195933_incision_crop_0.jpg",
+        "incision_polyline": [
+            29,
+            66,
+            176,
+            45
+        ],
+        "crossing_positions": [
+            [
+                37.32,
+                64.81
+            ]
+        ],
+        "crossing_angles": [
+            57.09
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-211254_incision_crop_0.jpg",
+        "incision_polyline": [
+            42,
+            55,
+            433,
+            80
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-212441_incision_crop_0.jpg",
+        "incision_polyline": [
+            20,
+            41,
+            289,
+            51
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221012-222310_incision_crop_0.jpg",
+        "incision_polyline": [
+            64,
+            65,
+            375,
+            69
+        ],
+        "crossing_positions": [
+            [
+                338.53,
+                68.53
+            ],
+            [
+                109.0,
+                65.58
+            ],
+            [
+                181.0,
+                66.5
+            ]
+        ],
+        "crossing_angles": [
+            87.16,
+            89.26,
+            89.26
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221013-082807_incision_crop_0.jpg",
+        "incision_polyline": [
+            174,
+            27,
+            224,
+            20
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221013-082926_incision_crop_0.jpg",
+        "incision_polyline": [
+            94,
+            45,
+            141,
+            50
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221013-135730_incision_crop_0.jpg",
+        "incision_polyline": [
+            57,
+            23,
+            171,
+            22
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221013-135730_incision_crop_1.jpg",
+        "incision_polyline": [
+            6,
+            13,
+            170,
+            13
+        ],
+        "crossing_positions": [
+            [
+                26.71,
+                13.0
+            ]
+        ],
+        "crossing_angles": [
+            86.63
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221013-141359_incision_crop_0.jpg",
+        "incision_polyline": [
+            57,
+            23,
+            171,
+            22
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221013-141359_incision_crop_1.jpg",
+        "incision_polyline": [
+            6,
+            13,
+            170,
+            13
+        ],
+        "crossing_positions": [
+            [
+                26.71,
+                13.0
+            ]
+        ],
+        "crossing_angles": [
+            86.63
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221013-143456_incision_crop_0.jpg",
+        "incision_polyline": [
+            107,
+            103,
+            359,
+            41
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221013-143648_incision_crop_0.jpg",
+        "incision_polyline": [
+            153,
+            47,
+            178,
+            52
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221013-160437_incision_crop_0.jpg",
+        "incision_polyline": [
+            152,
+            29,
+            183,
+            29
+        ],
+        "crossing_positions": [
+            [
+                178.85,
+                29.0
+            ]
+        ],
+        "crossing_angles": [
+            87.88
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221013-160507_incision_crop_1.jpg",
+        "incision_polyline": [
+            231,
+            47,
+            537,
+            44
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221013-160507_incision_crop_3.jpg",
+        "incision_polyline": [
+            427,
+            103,
+            659,
+            152
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221013-212436_incision_crop_0.jpg",
+        "incision_polyline": [
+            79,
+            59,
+            360,
+            62
+        ],
+        "crossing_positions": [
+            [
+                190.12,
+                60.19
+            ]
+        ],
+        "crossing_angles": [
+            88.12
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221014-085619_incision_crop_0.jpg",
+        "incision_polyline": [
+            26,
+            32,
+            309,
+            36
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221014-085619_incision_crop_1.jpg",
+        "incision_polyline": [
+            88,
+            37,
+            362,
+            51
+        ],
+        "crossing_positions": [
+            [
+                169.78,
+                41.18
+            ]
+        ],
+        "crossing_angles": [
+            89.46
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221014-114727_incision_crop_0.jpg",
+        "incision_polyline": [
+            50,
+            34,
+            265,
+            66
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221014-114727_incision_crop_1.jpg",
+        "incision_polyline": [
+            139,
+            33,
+            170,
+            30
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221014-114727_incision_crop_2.jpg",
+        "incision_polyline": [
+            42,
+            31,
+            311,
+            31
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221014-172255_incision_crop_0.jpg",
+        "incision_polyline": [
+            23,
+            52,
+            299,
+            53
+        ],
+        "crossing_positions": [
+            [
+                242.34,
+                52.79
+            ],
+            [
+                186.1,
+                52.59
+            ],
+            [
+                201.86,
+                52.65
+            ]
+        ],
+        "crossing_angles": [
+            86.93,
+            80.33,
+            85.44
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221014-172255_incision_crop_2.jpg",
+        "incision_polyline": [
+            26,
+            39,
+            292,
+            37
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221112-131935_incision_crop_0.jpg",
+        "incision_polyline": [
+            26,
+            32,
+            68,
+            33
+        ],
+        "crossing_positions": [
+            [
+                50.56,
+                32.58
+            ]
+        ],
+        "crossing_angles": [
+            87.55
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221113-231104_incision_crop_0.jpg",
+        "incision_polyline": [
+            7,
+            17,
+            89,
+            15
+        ],
+        "crossing_positions": [
+            [
+                12.49,
+                16.87
+            ],
+            [
+                74.0,
+                15.37
+            ]
+        ],
+        "crossing_angles": [
+            87.82,
+            88.6
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221115-114243_incision_crop_0.jpg",
+        "incision_polyline": [
+            3,
+            15,
+            56,
+            15
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221115-165421_incision_crop_0.jpg",
+        "incision_polyline": [
+            43,
+            80,
+            383,
+            82
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221115-183548_incision_crop_0.jpg",
+        "incision_polyline": [
+            13,
+            45,
+            265,
+            39
+        ],
+        "crossing_positions": [
+            [
+                248.69,
+                39.39
+            ]
+        ],
+        "crossing_angles": [
+            70.33
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221116-110235_incision_crop_0.jpg",
+        "incision_polyline": [
+            18,
+            26,
+            148,
+            35
+        ],
+        "crossing_positions": [
+            [
+                129.09,
+                33.69
+            ],
+            [
+                45.6,
+                27.91
+            ]
+        ],
+        "crossing_angles": [
+            87.79,
+            87.26
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221116-121120_incision_crop_1.jpg",
+        "incision_polyline": [
+            19,
+            44,
+            301,
+            60
+        ],
+        "crossing_positions": [
+            [
+                36.88,
+                45.01
+            ],
+            [
+                260.79,
+                57.72
+            ]
+        ],
+        "crossing_angles": [
+            79.63,
+            83.89
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221117-104216_incision_crop_0.jpg",
+        "incision_polyline": [
+            185,
+            52,
+            254,
+            54
+        ],
+        "crossing_positions": [
+            [
+                242.0,
+                53.65
+            ],
+            [
+                242.0,
+                53.65
+            ],
+            [
+                187.58,
+                52.07
+            ]
+        ],
+        "crossing_angles": [
+            88.34,
+            88.34,
+            88.65
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221124-085822_incision_crop_0.jpg",
+        "incision_polyline": [
+            23,
+            57,
+            249,
+            43
+        ],
+        "crossing_positions": [
+            [
+                41.49,
+                55.85
+            ]
+        ],
+        "crossing_angles": [
+            89.97
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221124-090552_incision_crop_0.jpg",
+        "incision_polyline": [
+            101,
+            46,
+            185,
+            28
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221124-204458_incision_crop_0.jpg",
+        "incision_polyline": [
+            12,
+            23,
+            53,
+            18
+        ],
+        "crossing_positions": [
+            [
+                32.06,
+                20.55
+            ]
+        ],
+        "crossing_angles": [
+            74.92
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221124-204458_incision_crop_1.jpg",
+        "incision_polyline": [
+            33,
+            8,
+            69,
+            2
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221201-073150_incision_crop_0.jpg",
+        "incision_polyline": [
+            75,
+            37,
+            190,
+            26
+        ],
+        "crossing_positions": [
+            [
+                167.57,
+                28.15
+            ],
+            [
+                121.0,
+                32.6
+            ]
+        ],
+        "crossing_angles": [
+            86.0,
+            81.99
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221201-073150_incision_crop_1.jpg",
+        "incision_polyline": [
+            190,
+            27,
+            271,
+            17
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221201-083205_incision_crop_0.jpg",
+        "incision_polyline": [
+            43,
+            38,
+            156,
+            29
+        ],
+        "crossing_positions": [
+            [
+                152.31,
+                29.29
+            ]
+        ],
+        "crossing_angles": [
+            81.63
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221201-083739_incision_crop_0.jpg",
+        "incision_polyline": [
+            26,
+            23,
+            44,
+            24
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221201-083739_incision_crop_1.jpg",
+        "incision_polyline": [
+            27,
+            14,
+            115,
+            36
+        ],
+        "crossing_positions": [
+            [
+                58.38,
+                21.84
+            ],
+            [
+                89.57,
+                29.64
+            ]
+        ],
+        "crossing_angles": [
+            84.33,
+            82.08
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221201-095424_incision_crop_0.jpg",
+        "incision_polyline": [
+            29,
+            32,
+            59,
+            27
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20221201-095424_incision_crop_1.jpg",
+        "incision_polyline": [
+            62,
+            35,
+            173,
+            22
+        ],
+        "crossing_positions": [
+            [
+                67.0,
+                34.41
+            ]
+        ],
+        "crossing_angles": [
+            83.32
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230221-170209_incision_crop_0.jpg",
+        "incision_polyline": [
+            25,
+            42,
+            261,
+            32
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230221-173417_incision_crop_0.jpg",
+        "incision_polyline": [
+            19,
+            34,
+            116,
+            45
+        ],
+        "crossing_positions": [
+            [
+                49.5,
+                37.46
+            ],
+            [
+                91.33,
+                42.2
+            ],
+            [
+                32.0,
+                35.47
+            ]
+        ],
+        "crossing_angles": [
+            87.34,
+            79.95,
+            83.53
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230221-174453_incision_crop_0.jpg",
+        "incision_polyline": [
+            15,
+            28,
+            187,
+            56
+        ],
+        "crossing_positions": [
+            [
+                103.35,
+                42.38
+            ]
+        ],
+        "crossing_angles": [
+            84.33
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230221-194108_incision_crop_0.jpg",
+        "incision_polyline": [
+            57,
+            32,
+            188,
+            34
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230221-205917_incision_crop_0.jpg",
+        "incision_polyline": [
+            96,
+            97,
+            435,
+            82
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230221-214441_incision_crop_0.jpg",
+        "incision_polyline": [
+            113,
+            83,
+            453,
+            77
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230221-220322_incision_crop_0.jpg",
+        "incision_polyline": [
+            35,
+            109,
+            427,
+            74
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230221-220322_incision_crop_1.jpg",
+        "incision_polyline": [
+            23,
+            109,
+            270,
+            69
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230221-221106_incision_crop_0.jpg",
+        "incision_polyline": [
+            77,
+            59,
+            225,
+            54
+        ],
+        "crossing_positions": [
+            [
+                166.0,
+                55.99
+            ]
+        ],
+        "crossing_angles": [
+            88.07
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230221-230333_incision_crop_0.jpg",
+        "incision_polyline": [
+            18,
+            50,
+            255,
+            70
+        ],
+        "crossing_positions": [
+            [
+                253.0,
+                69.83
+            ]
+        ],
+        "crossing_angles": [
+            85.18
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-081135_incision_crop_0.jpg",
+        "incision_polyline": [
+            23,
+            60,
+            315,
+            52
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-081220_incision_crop_0.jpg",
+        "incision_polyline": [
+            19,
+            44,
+            279,
+            52
+        ],
+        "crossing_positions": [
+            [
+                200.0,
+                49.57
+            ],
+            [
+                150.39,
+                48.04
+            ],
+            [
+                161.6,
+                48.39
+            ],
+            [
+                100.75,
+                46.52
+            ]
+        ],
+        "crossing_angles": [
+            88.24,
+            84.17,
+            74.2,
+            86.05
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-105936_incision_crop_0.jpg",
+        "incision_polyline": [
+            24,
+            78,
+            416,
+            95
+        ],
+        "crossing_positions": [
+            [
+                367.6,
+                92.9
+            ]
+        ],
+        "crossing_angles": [
+            85.43
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-122505_incision_crop_0.jpg",
+        "incision_polyline": [
+            46,
+            31,
+            209,
+            26
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-130058_incision_crop_0.jpg",
+        "incision_polyline": [
+            91,
+            114,
+            373,
+            92
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-130319_incision_crop_0.jpg",
+        "incision_polyline": [
+            24,
+            43,
+            369,
+            58
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-130406_incision_crop_0.jpg",
+        "incision_polyline": [
+            28,
+            36,
+            252,
+            52
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-130540_incision_crop_0.jpg",
+        "incision_polyline": [
+            26,
+            61,
+            339,
+            56
+        ],
+        "crossing_positions": [
+            [
+                148.0,
+                59.05
+            ],
+            [
+                94.87,
+                59.9
+            ]
+        ],
+        "crossing_angles": [
+            89.08,
+            80.95
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-135733_incision_crop_0.jpg",
+        "incision_polyline": [
+            71,
+            56,
+            267,
+            29
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-175331_incision_crop_0.jpg",
+        "incision_polyline": [
+            14,
+            22,
+            164,
+            49
+        ],
+        "crossing_positions": [
+            [
+                145.97,
+                45.75
+            ]
+        ],
+        "crossing_angles": [
+            81.92
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-175331_incision_crop_1.jpg",
+        "incision_polyline": [
+            11,
+            22,
+            146,
+            35
+        ],
+        "crossing_positions": [
+            [
+                27.63,
+                23.6
+            ]
+        ],
+        "crossing_angles": [
+            75.75
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-180424_incision_crop_0.jpg",
+        "incision_polyline": [
+            13,
+            26,
+            151,
+            40
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-180424_incision_crop_1.jpg",
+        "incision_polyline": [
+            15,
+            26,
+            172,
+            51
+        ],
+        "crossing_positions": [
+            [
+                68.87,
+                34.58
+            ]
+        ],
+        "crossing_angles": [
+            83.07
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-181344_incision_crop_0.jpg",
+        "incision_polyline": [
+            13,
+            41,
+            196,
+            31
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-184245_incision_crop_0.jpg",
+        "incision_polyline": [
+            14,
+            35,
+            254,
+            40
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-194203_incision_crop_0.jpg",
+        "incision_polyline": [
+            96,
+            97,
+            435,
+            82
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-194526_incision_crop_0.jpg",
+        "incision_polyline": [
+            88,
+            55,
+            311,
+            81
+        ],
+        "crossing_positions": [
+            [
+                287.39,
+                78.25
+            ]
+        ],
+        "crossing_angles": [
+            73.02
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-194730_incision_crop_0.jpg",
+        "incision_polyline": [
+            28,
+            70,
+            326,
+            45
+        ],
+        "crossing_positions": [
+            [
+                186.72,
+                56.68
+            ]
+        ],
+        "crossing_angles": [
+            69.95
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-201243_incision_crop_0.jpg",
+        "incision_polyline": [
+            43,
+            98,
+            516,
+            80
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-201243_incision_crop_1.jpg",
+        "incision_polyline": [
+            45,
+            75,
+            551,
+            22
+        ],
+        "crossing_positions": [
+            [
+                275.0,
+                50.91
+            ]
+        ],
+        "crossing_angles": [
+            84.02
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-202641_incision_crop_0.jpg",
+        "incision_polyline": [
+            28,
+            83,
+            403,
+            71
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-210423_incision_crop_0.jpg",
+        "incision_polyline": [
+            42,
+            75,
+            522,
+            58
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-210423_incision_crop_1.jpg",
+        "incision_polyline": [
+            64,
+            84,
+            575,
+            56
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230222-210423_incision_crop_2.jpg",
+        "incision_polyline": [
+            0,
+            58,
+            546,
+            55
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-081446_incision_crop_0.jpg",
+        "incision_polyline": [
+            24,
+            53,
+            304,
+            49
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-081446_incision_crop_1.jpg",
+        "incision_polyline": [
+            22,
+            33,
+            298,
+            33
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-081446_incision_crop_2.jpg",
+        "incision_polyline": [
+            20,
+            67,
+            278,
+            37
+        ],
+        "crossing_positions": [
+            [
+                97.17,
+                58.03
+            ]
+        ],
+        "crossing_angles": [
+            79.18
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-082059_incision_crop_0.jpg",
+        "incision_polyline": [
+            21,
+            34,
+            293,
+            31
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-082059_incision_crop_1.jpg",
+        "incision_polyline": [
+            21,
+            60,
+            299,
+            57
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-082059_incision_crop_2.jpg",
+        "incision_polyline": [
+            22,
+            64,
+            278,
+            31
+        ],
+        "crossing_positions": [
+            [
+                197.0,
+                41.44
+            ]
+        ],
+        "crossing_angles": [
+            82.65
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-082059_incision_crop_4.jpg",
+        "incision_polyline": [
+            24,
+            56,
+            615,
+            107
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-082339_incision_crop_0.jpg",
+        "incision_polyline": [
+            26,
+            49,
+            305,
+            34
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-082339_incision_crop_1.jpg",
+        "incision_polyline": [
+            19,
+            68,
+            297,
+            43
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-082339_incision_crop_2.jpg",
+        "incision_polyline": [
+            59,
+            75,
+            282,
+            50
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-105526_incision_crop_0.jpg",
+        "incision_polyline": [
+            64,
+            70,
+            575,
+            98
+        ],
+        "crossing_positions": [
+            [
+                122.0,
+                73.18
+            ]
+        ],
+        "crossing_angles": [
+            86.86
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-105526_incision_crop_1.jpg",
+        "incision_polyline": [
+            134,
+            71,
+            653,
+            15
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-110841_incision_crop_0.jpg",
+        "incision_polyline": [
+            2,
+            24,
+            155,
+            23
+        ],
+        "crossing_positions": [
+            [
+                94.49,
+                23.4
+            ],
+            [
+                106.34,
+                23.32
+            ]
+        ],
+        "crossing_angles": [
+            22.18,
+            54.09
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-121931_incision_crop_0.jpg",
+        "incision_polyline": [
+            16,
+            59,
+            223,
+            38
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-122157_incision_crop_0.jpg",
+        "incision_polyline": [
+            15,
+            41,
+            210,
+            36
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-122201_incision_crop_0.jpg",
+        "incision_polyline": [
+            11,
+            48,
+            255,
+            44
+        ],
+        "crossing_positions": [
+            [
+                127.86,
+                46.08
+            ]
+        ],
+        "crossing_angles": [
+            86.85
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-122300_incision_crop_0.jpg",
+        "incision_polyline": [
+            17,
+            47,
+            257,
+            45
+        ],
+        "crossing_positions": [
+            [
+                182.37,
+                45.62
+            ]
+        ],
+        "crossing_angles": [
+            77.48
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-122749_incision_crop_0.jpg",
+        "incision_polyline": [
+            33,
+            55,
+            414,
+            61
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-122749_incision_crop_1.jpg",
+        "incision_polyline": [
+            3,
+            88,
+            369,
+            102
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-124020_incision_crop_0.jpg",
+        "incision_polyline": [
+            29,
+            35,
+            241,
+            63
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-124020_incision_crop_1.jpg",
+        "incision_polyline": [
+            23,
+            32,
+            256,
+            48
+        ],
+        "crossing_positions": [
+            [
+                186.0,
+                43.19
+            ],
+            [
+                48.62,
+                33.76
+            ]
+        ],
+        "crossing_angles": [
+            86.07,
+            88.22
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-133756_incision_crop_0.jpg",
+        "incision_polyline": [
+            61,
+            88,
+            403,
+            40
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-160655_incision_crop_0.jpg",
+        "incision_polyline": [
+            4,
+            22,
+            62,
+            12
+        ],
+        "crossing_positions": [
+            [
+                43.0,
+                15.28
+            ]
+        ],
+        "crossing_angles": [
+            80.22
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-160655_incision_crop_2.jpg",
+        "incision_polyline": [
+            9,
+            11,
+            58,
+            7
+        ],
+        "crossing_positions": [
+            [
+                56.58,
+                7.12
+            ],
+            [
+                36.0,
+                8.8
+            ]
+        ],
+        "crossing_angles": [
+            74.02,
+            85.33
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-161249_incision_crop_0.jpg",
+        "incision_polyline": [
+            17,
+            29,
+            144,
+            31
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-161818_incision_crop_0.jpg",
+        "incision_polyline": [
+            43,
+            42,
+            403,
+            111
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-185323_incision_crop_0.jpg",
+        "incision_polyline": [
+            1,
+            35,
+            206,
+            26
+        ],
+        "crossing_positions": [
+            [
+                117.6,
+                29.88
+            ]
+        ],
+        "crossing_angles": [
+            81.89
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-185323_incision_crop_2.jpg",
+        "incision_polyline": [
+            42,
+            41,
+            133,
+            27
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230223-185323_incision_crop_3.jpg",
+        "incision_polyline": [
+            16,
+            18,
+            187,
+            13
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230224-080909_incision_crop_0.jpg",
+        "incision_polyline": [
+            19,
+            26,
+            159,
+            21
+        ],
+        "crossing_positions": [
+            [
+                154.0,
+                21.18
+            ],
+            [
+                55.0,
+                24.71
+            ]
+        ],
+        "crossing_angles": [
+            87.95,
+            87.95
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230224-082845_incision_crop_0.jpg",
+        "incision_polyline": [
+            115,
+            62,
+            420,
+            61
+        ],
+        "crossing_positions": [
+            [
+                334.95,
+                61.28
+            ]
+        ],
+        "crossing_angles": [
+            87.52
+        ]
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230224-082845_incision_crop_1.jpg",
+        "incision_polyline": [
+            19,
+            58,
+            353,
+            22
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230224-114750_incision_crop_0.jpg",
+        "incision_polyline": [
+            36,
+            81,
+            372,
+            65
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    },
+    {
+        "filename": "cvat_dataset/images/default/SA_20230224-114750_incision_crop_1.jpg",
+        "incision_polyline": [
+            80,
+            58,
+            402,
+            40
+        ],
+        "crossing_positions": [],
+        "crossing_angles": []
+    }
+]
