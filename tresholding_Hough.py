@@ -2,7 +2,7 @@ import numpy as np
 import cv2 as cv
 from matplotlib import pyplot as plt
 
-PATH_TO_IMG = 'cvat_dataset/images/default/SA_20211012-165505_incision_crop_0.jpg'
+PATH_TO_IMG = 'cvat_dataset/images/default/SA_20211012-164802_incision_crop_0.jpg'
 
 img = cv.imread(PATH_TO_IMG, cv.IMREAD_GRAYSCALE)
 h,w = img.shape
@@ -80,13 +80,10 @@ morph = cv.dilate(morph,kernel,iterations = 1)
 # )
 # print(lines1)
 
-from detector import keypoints_postprocessing, coordinates_control, detect_stitches
+from detector import postprocessing_stitch, vertical_line_detection
 false1= 0
-fin = detect_stitches(PATH_TO_IMG, false1)
-print(fin)
-fin = keypoints_postprocessing(fin, img, 'stitch', PATH_TO_IMG)
-print(fin)
-fin = coordinates_control(fin, img, PATH_TO_IMG)
+fin = vertical_line_detection(PATH_TO_IMG)
+fin = postprocessing_stitch(fin, img)
 for points in fin:
 
     # Extracted points nested in the list
