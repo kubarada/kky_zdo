@@ -1,21 +1,20 @@
 import numpy as np
 import cv2 as cv
-from matplotlib import pyplot as plt
 
-PATH_TO_IMG = 'cvat_dataset/images/default/SA_20211012-164802_incision_crop_0.jpg'
+PATH_TO_IMG = '../cvat_dataset/images/default/SA_20211012-164802_incision_crop_0.jpg'
 
 img = cv.imread(PATH_TO_IMG, cv.IMREAD_GRAYSCALE)
 h,w = img.shape
 assert img is not None, "file could not be read, check with os.path.exists()"
 img = cv.medianBlur(img,5)
 ret,th1 = cv.threshold(img,110,255,cv.THRESH_BINARY)
-cv.imwrite('failed/tresholded1.png', th1)
+cv.imwrite('tresholded1.png', th1)
 th2 = cv.adaptiveThreshold(img,255,cv.ADAPTIVE_THRESH_MEAN_C,\
             cv.THRESH_BINARY,11,2)
-cv.imwrite('failed/tresholded2.png', th2)
+cv.imwrite('tresholded2.png', th2)
 th3 = cv.adaptiveThreshold(img,255,cv.ADAPTIVE_THRESH_GAUSSIAN_C,\
             cv.THRESH_BINARY_INV,11,2)
-cv.imwrite('failed/tresholded3.png', th3)
+cv.imwrite('tresholded3.png', th3)
 
 kernel = np.ones((1,3),np.uint8)
 morph = cv.morphologyEx(th3, cv.MORPH_OPEN, kernel)
@@ -80,7 +79,7 @@ morph = cv.dilate(morph,kernel,iterations = 1)
 # )
 # print(lines1)
 
-from detector import postprocessing_stitch, vertical_line_detection
+from src.detector import postprocessing_stitch, vertical_line_detection
 false1= 0
 fin = vertical_line_detection(PATH_TO_IMG)
 fin = postprocessing_stitch(fin, img)

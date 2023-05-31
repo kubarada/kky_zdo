@@ -1,6 +1,6 @@
 import os
-from detector import horizontal_line_detection, postprocessing_stitch, vertical_line_detection
-from evaluation import create_content
+from src.detector import horizontal_line_detection, postprocessing_stitch, vertical_line_detection
+from src.evaluation import create_content
 import numpy as np
 import cv2 as cv
 from sklearn.linear_model import LinearRegression
@@ -76,6 +76,6 @@ for filename in files:
     else:
         continue
 print(json_content)
-with open('cvat_dataset/output.json', "w", encoding='utf-8') as fw:
+with open('../cvat_dataset/output.json', "w", encoding='utf-8') as fw:
     json.dump(json_content, fw, ensure_ascii=False, indent=4)
 
