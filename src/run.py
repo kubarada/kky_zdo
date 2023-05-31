@@ -70,11 +70,11 @@ for filename in image_files:
         if fin is not None:
             fin = postprocessing_stitch(fin, img1)
             if fin is not None:
-                print('Fin is: ', fin)
+                #print('Fin is: ', fin)
                 for points in fin:
                     # Extracted points nested in the list
                     test = points[0][0]
-                    print('test ', test)
+                    #print('test ', test)
                     x1, y1, x2, y2 = points[0][0]
 
                     # Draw the lines joing the points
@@ -92,6 +92,6 @@ for filename in image_files:
         i = i + 1
     else:
         continue
-print(json_content)
+#print(json_content)
 with open(output_file, "w", encoding='utf-8') as fw:
     json.dump(json_content, fw, ensure_ascii=False, indent=4)

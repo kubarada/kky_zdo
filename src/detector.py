@@ -77,7 +77,7 @@ def vertical_line_detection(PATH_TO_FILE):
 
     # Perform Hough Transform to detect lines
     lines = cv.HoughLinesP(thinner_line, 1, np.pi / 180, 15, h*0.2, h*0.1)
-    print(lines)
+    #print(lines)
     # Identify stitches based on their angle
     stitches = []
     if lines is not None:
