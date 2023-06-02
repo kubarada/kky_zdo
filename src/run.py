@@ -1,12 +1,12 @@
 from detector import horizontal_line_detection, vertical_line_detection
 from evaluation import create_content
 import numpy as np
-import os
 import cv2 as cv
 from sklearn.linear_model import LinearRegression
 from sklearn.cluster import DBSCAN
 import matplotlib.pyplot as plt
 import json
+import os
 import sys
 
 
@@ -29,8 +29,17 @@ else:
     else:
         image_files = arg[1:]
     output_file = arg[0]
+v = False
 
-for filename in image_files:
+directory = '../cvat_dataset/images/default/'
+
+files = []
+for filename in os.listdir(directory):
+    f = os.path.join(directory, filename)
+    files.append(f)
+
+for filename in files:
+    print(i)
     img = cv.imread(filename)
     img1 = cv.imread(filename)
     h, w = (cv.cvtColor(img, cv.COLOR_BGR2GRAY)).shape
@@ -69,18 +78,20 @@ for filename in image_files:
         output_horizontal = np.array([[[point1[0], point1[1], point2[0], point2[1]]]], dtype=np.int32)
         output_vertical = np.empty_like(output_horizontal)
 
-        fin = vertical_line_detection(filename)
-        eps = w*0.2  # Maximum distance between two samples to be considered as part of the same neighborhood
-        min_samples = 2  # Minimum number of samples required to form a dense region
-
-        dbscan = DBSCAN(eps=eps, min_samples=min_samples)
-        labels = dbscan.fit_predict(fin)
-        unique_labels = np.unique(labels)
         fin_ver = []
-        for label in unique_labels:
-            cluster_lines = fin[labels == label]
-            average_line = np.mean(cluster_lines, axis=0)
-            fin_ver.append(average_line)
+        fin = vertical_line_detection(filename)
+        if len(fin) is not 0:
+            eps = w*0.2  # Maximum distance between two samples to be considered as part of the same neighborhood
+            min_samples = 2  # Minimum number of samples required to form a dense region
+
+            dbscan = DBSCAN(eps=eps, min_samples=min_samples)
+            labels = dbscan.fit_predict(fin)
+            unique_labels = np.unique(labels)
+
+            for label in unique_labels:
+                cluster_lines = fin[labels == label]
+                average_line = np.mean(cluster_lines, axis=0)
+                fin_ver.append(average_line)
 
         if fin_ver is not None:
             fin_ver = np.array(fin_ver, dtype=np.int32)

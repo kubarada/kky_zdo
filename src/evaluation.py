@@ -1,60 +1,6 @@
 import numpy as np
 import math
 
-def create_content(image, incision, stitches):
-
-    stitches_in = list()
-    incisions_in = list()
-
-    if len(incision) > 0:
-        for i in [0, 2]:  # start and end
-            coordinates = incision[0][0]
-            points = [coordinates[i], coordinates[i+1]]
-            incisions_in.append(points)
-
-    incisions_in = [incisions_in]
-
-    # check if any stitches were detected
-    if stitches is not None:
-        for stitch in stitches:
-            coordinates = stitch[0]
-            line = list()
-            for i in [0, 2]:
-                points = [coordinates[i], coordinates[i+1]]
-                line.append(points)
-            stitches_in.append(line)
-
-    intersections, intersections_alphas = compute_intersections(incisions_in, stitches_in)
-
-    # create the dictionary for json
-    information_out = [
-        {
-                "filename": image,
-                "incision_polyline": incision[0][0].tolist(),
-                "crossing_positions": intersection_int(intersections),
-                "crossing_angles": alphas_int(intersections_alphas)
-            },
-        ]
-
-    intersections_num = intersection_int(intersections)
-    intersections_alphas_num = alphas_int(intersections_alphas)
-    return information_out, intersections_num, intersections_alphas_num
-
-def intersection_int(keypoints):
-    int_keypoints = list()
-    for points in keypoints:
-        one_line = list()
-        for point in points:
-            one_line.append(float(point))
-        int_keypoints.append(one_line)
-    return int_keypoints
-
-def alphas_int(keypoints):
-    int_keypoints = list()
-    for point in keypoints:
-        int_keypoints.append(float(point))
-    return int_keypoints
-
 def compute_intersections(incisions, stitches):
 
     incision_alphas = []
@@ -178,3 +124,52 @@ def intersectLines(pt1, pt2, ptA, ptB):
             valid = 1
 
     return xi, yi, valid, r, s
+
+def create_content(image, incision, stitches):
+
+    stitches_in = list()
+    incisions_in = list()
+    if len(incision) > 0:
+        for i in [0,2]:  # start and end
+            coordinates = incision[0][0]
+            points = [coordinates[i], coordinates[i+1]]
+            incisions_in.append(points)
+    incisions_in = [incisions_in]
+    if stitches is not None:
+        for stitch in stitches:
+            coordinates = stitch[0]
+            line = list()
+            for i in [0, 2]:
+                points = [coordinates[i], coordinates[i+1]]
+                line.append(points)
+            stitches_in.append(line)
+
+    intersections, intersections_alphas = compute_intersections(incisions_in, stitches_in)
+    information_out = [
+        {
+                "filename": image,
+                "incision_polyline": incision[0][0].tolist(),
+                "crossing_positions": intersection_int(intersections),
+                "crossing_angles": alphas_int(intersections_alphas)
+            },
+        ]
+
+    intersections_num = intersection_int(intersections)
+    intersections_alphas_num = alphas_int(intersections_alphas)
+    return information_out, intersections_num, intersections_alphas_num
+
+
+def intersection_int(keypoints):
+    int_keypoints = list()
+    for points in keypoints:
+        one_line = list()
+        for point in points:
+            one_line.append(float(point))
+        int_keypoints.append(one_line)
+    return int_keypoints
+
+def alphas_int(keypoints):
+    int_keypoints = list()
+    for point in keypoints:
+        int_keypoints.append(float(point))
+    return int_keypoints
