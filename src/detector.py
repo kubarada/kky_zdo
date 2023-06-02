@@ -11,16 +11,13 @@ def horizontal_line_detection(PATH_TO_FILE):
         w = int(w * 2)
         h = int(h * 2)
         gray = cv.resize(gray, (w, h), interpolation=cv.INTER_CUBIC)
-
     th = cv.adaptiveThreshold(gray, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY_INV, 17, 2)
-
     lines = cv.HoughLinesP(th, 1, np.pi / 180, 150, w * 0.75, w*0.1)
     lines_list = []
     if lines is not None:
         for line in lines:
             lines_list.append(line)
     else:
-        # SECOND TRY - resizing, bcs works better on bigger pictures
         w = int(w * 2)
         h = int(h * 2)
         gray = cv.resize(gray, (w, h), interpolation=cv.INTER_CUBIC)
@@ -34,7 +31,7 @@ def horizontal_line_detection(PATH_TO_FILE):
                 if np.abs(np.arctan2(y2 - y1, x2 - x1) * 180 / np.pi) < 30:  # adding lines with just certain angle
                     lines_list.append(line)
         else:
-            print('No lines to detect in image ' + str(PATH_TO_FILE))
+            print('No incision to detect in image ' + str(PATH_TO_FILE))
 
     if img.shape == gray.shape:
         return lines_list
@@ -46,10 +43,8 @@ def horizontal_line_detection(PATH_TO_FILE):
 
 
 def vertical_line_detection(PATH_TO_FILE):
-
     img = cv.imread(PATH_TO_FILE)
     gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
-
     gray = cv.GaussianBlur(gray, (17, 17), 0)
 
     h, w = gray.shape
@@ -78,6 +73,9 @@ def vertical_line_detection(PATH_TO_FILE):
             angle = np.arctan2(end[1] - start[1], end[0] - start[0]) * 180 / np.pi
             if np.abs(angle) > 50:
                 stitches.append(line)
+    else:
+        print('No stitches to detect in image ', str(PATH_TO_FILE))
+
     stitches = np.array([[x1, y1, x2, y2] for (x1, y1), (x2, y2) in stitches])
 
     if img.shape == thresh.shape:

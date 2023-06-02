@@ -1,6 +1,7 @@
 from detector import horizontal_line_detection, vertical_line_detection
 from evaluation import create_content
 import numpy as np
+import os
 import cv2 as cv
 from sklearn.linear_model import LinearRegression
 from sklearn.cluster import DBSCAN
@@ -19,7 +20,7 @@ v = "-v" in arg
 
 if len(arg) == 0:
     print('No arguments detected. Demo with visualization for 1 image. Output in output.json.')
-    image_files = ['../cvat_dataset/images/default/SA_20220620-103348_incision_crop_0.jpg']
+    image_files = ['SA_20211116-083704_incision_crop_0.jpg']
     output_file = 'output.json'
     v = True
 else:
