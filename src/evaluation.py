@@ -17,7 +17,7 @@ def create_content(image, incision, stitches):
     # check if any stitches were detected
     if stitches is not None:
         for stitch in stitches:
-            coordinates = stitch[0][0]
+            coordinates = stitch[0]
             line = list()
             for i in [0, 2]:
                 points = [coordinates[i], coordinates[i+1]]

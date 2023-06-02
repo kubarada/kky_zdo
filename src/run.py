@@ -1,9 +1,9 @@
-import os
-from detector import horizontal_line_detection, postprocessing_stitch, vertical_line_detection
+from detector import horizontal_line_detection, vertical_line_detection
 from evaluation import create_content
 import numpy as np
 import cv2 as cv
 from sklearn.linear_model import LinearRegression
+from sklearn.cluster import DBSCAN
 import matplotlib.pyplot as plt
 import json
 import sys
@@ -32,6 +32,7 @@ else:
 for filename in image_files:
     img = cv.imread(filename)
     img1 = cv.imread(filename)
+    h, w = (cv.cvtColor(img, cv.COLOR_BGR2GRAY)).shape
     horizontal_lines = horizontal_line_detection(filename)
     horizontal_lines_list = []
     for line in horizontal_lines:
@@ -64,34 +65,43 @@ for filename in image_files:
         point2 = [end_x, end_y]
 
         # Append more lines if needed
-        output = np.array([[[point1[0], point1[1], point2[0], point2[1]]]], dtype=np.int32)
+        output_horizontal = np.array([[[point1[0], point1[1], point2[0], point2[1]]]], dtype=np.int32)
+        output_vertical = np.empty_like(output_horizontal)
 
         fin = vertical_line_detection(filename)
-        if fin is not None:
-            fin = postprocessing_stitch(fin, img1)
-            if fin is not None:
-                #print('Fin is: ', fin)
-                for points in fin:
-                    # Extracted points nested in the list
-                    test = points[0][0]
-                    #print('test ', test)
-                    x1, y1, x2, y2 = points[0][0]
+        eps = w*0.2  # Maximum distance between two samples to be considered as part of the same neighborhood
+        min_samples = 2  # Minimum number of samples required to form a dense region
 
-                    # Draw the lines joing the points
-                    # On the original image
-                    cv.line(img, (x1, y1), (x2, y2), (0, 255, 0), 1)
+        dbscan = DBSCAN(eps=eps, min_samples=min_samples)
+        labels = dbscan.fit_predict(fin)
+        unique_labels = np.unique(labels)
+        fin_ver = []
+        for label in unique_labels:
+            cluster_lines = fin[labels == label]
+            average_line = np.mean(cluster_lines, axis=0)
+            fin_ver.append(average_line)
+
+        if fin_ver is not None:
+            fin_ver = np.array(fin_ver, dtype=np.int32)
+            for points in fin_ver:
+                x1, y1, x2, y2 = points
+                cv.line(img, (x1, y1), (x2, y2), (0, 255, 0), 1)
+                point1 = [x1, y1]
+                point2 = [x2, y2]
+                output_tmp = np.array([[[point1[0], point1[1], point2[0], point2[1]]]], dtype=np.int32)
+                output_vertical = np.append(output_vertical, output_tmp, axis=0)
+
+
         image_name = filename.replace('cvat_dataset/images/default/', '')
-        information, intersections, intersection_alphas = create_content(image_name, output, fin)
+        information, intersections, intersection_alphas = create_content(image_name, output_horizontal, output_vertical)
         json_content.append(information[0])
         if v:
             plt.imshow(img)
             plt.title("Title: " + filename)
             plt.show()
-
-
         i = i + 1
     else:
         continue
-#print(json_content)
+
 with open(output_file, "w", encoding='utf-8') as fw:
     json.dump(json_content, fw, ensure_ascii=False, indent=4)
