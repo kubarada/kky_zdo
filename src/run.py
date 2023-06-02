@@ -6,7 +6,6 @@ from sklearn.linear_model import LinearRegression
 from sklearn.cluster import DBSCAN
 import matplotlib.pyplot as plt
 import json
-import os
 import sys
 
 
@@ -26,20 +25,13 @@ if len(arg) == 0:
 else:
     if v:
         image_files = arg[2:]
+        print('Starting detection with visualization.')
     else:
         image_files = arg[1:]
+        print('Starting detection without visualization.')
     output_file = arg[0]
-v = False
 
-directory = '../cvat_dataset/images/default/'
-
-files = []
-for filename in os.listdir(directory):
-    f = os.path.join(directory, filename)
-    files.append(f)
-
-for filename in files:
-    print(i)
+for filename in image_files:
     img = cv.imread(filename)
     img1 = cv.imread(filename)
     h, w = (cv.cvtColor(img, cv.COLOR_BGR2GRAY)).shape
@@ -80,7 +72,7 @@ for filename in files:
 
         fin_ver = []
         fin = vertical_line_detection(filename)
-        if len(fin) is not 0:
+        if len(fin) != 0:
             eps = w*0.2  # Maximum distance between two samples to be considered as part of the same neighborhood
             min_samples = 2  # Minimum number of samples required to form a dense region
 

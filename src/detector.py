@@ -6,29 +6,18 @@ def horizontal_line_detection(PATH_TO_FILE):
     img = cv.imread(PATH_TO_FILE)
     gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
     h, w = gray.shape
-    # resizing, bcs works better on bigger pictures
-    if w < 250:
-        w = int(w * 2)
-        h = int(h * 2)
-        gray = cv.resize(gray, (w, h), interpolation=cv.INTER_CUBIC)
+    w = int(w * 2)
+    h = int(h * 2)
+    gray = cv.resize(gray, (w, h), interpolation=cv.INTER_CUBIC)
     th = cv.adaptiveThreshold(gray, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY_INV, 17, 2)
     lines = cv.HoughLinesP(th, 1, np.pi / 180, 150, w * 0.75, w*0.1)
     lines_list = []
     if lines is not None:
         for line in lines:
             lines_list.append(line)
+
     else:
-        w = int(w * 2)
-        h = int(h * 2)
-        th = cv.resize(th, (w, h), interpolation=cv.INTER_CUBIC)
-        lines = cv.HoughLinesP(th, 1, np.pi / 180, 150, w * 0.75, w * 0.1)
-        if lines is not None:
-            for line in lines:
-                x1, y1, x2, y2 = line[0]
-                if np.abs(np.arctan2(y2 - y1, x2 - x1) * 180 / np.pi) < 30:  # adding lines with just certain angle
-                    lines_list.append(line)
-        else:
-            print('No incision to detect in image ' + str(PATH_TO_FILE))
+        print('No incision to detect in image ' + str(PATH_TO_FILE))
 
     if img.shape == gray.shape:
         return lines_list
