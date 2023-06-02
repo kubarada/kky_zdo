@@ -18,9 +18,7 @@ def horizontal_line_detection(PATH_TO_FILE):
     lines_list = []
     if lines is not None:
         for line in lines:
-            x1, y1, x2, y2 = line[0]
-            if np.abs(np.arctan2(y2 - y1, x2 - x1) * 180 / np.pi) < 30:  # adding lines with just certain angle
-                lines_list.append(line)
+            lines_list.append(line)
     else:
         # SECOND TRY - resizing, bcs works better on bigger pictures
         w = int(w * 2)
@@ -31,7 +29,6 @@ def horizontal_line_detection(PATH_TO_FILE):
         lines = cv.HoughLinesP(th, 1, np.pi / 180, 150, w * 0.75, w * 0.1)
 
         if lines is not None:
-
             for line in lines:
                 x1, y1, x2, y2 = line[0]
                 if np.abs(np.arctan2(y2 - y1, x2 - x1) * 180 / np.pi) < 30:  # adding lines with just certain angle
@@ -60,9 +57,7 @@ def vertical_line_detection(PATH_TO_FILE):
     h = int(h * 2)
     gray = cv.resize(gray, (w, h), interpolation=cv.INTER_CUBIC)
 
-    # Apply adaptive thresholding
     thresh = cv.adaptiveThreshold(gray, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY_INV, 17, 2)
-
 
     kernel_vertical = cv.getStructuringElement(cv.MORPH_RECT, (1,8))
     eroded = cv.erode(thresh, kernel_vertical, iterations=1)
